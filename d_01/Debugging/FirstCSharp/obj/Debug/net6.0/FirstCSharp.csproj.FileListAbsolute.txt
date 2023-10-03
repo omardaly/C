@@ -1,0 +1,5 @@
+C:\Users\omard\OneDrive\Bureau\C#\d_01\Debugging\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.AssemblyReference.cache
+C:\Users\omard\OneDrive\Bureau\C#\d_01\Debugging\FirstCSharp\obj\Debug\net6.0\FirstCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omard\OneDrive\Bureau\C#\d_01\Debugging\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfoInputs.cache
+C:\Users\omard\OneDrive\Bureau\C#\d_01\Debugging\FirstCSharp\obj\Debug\net6.0\FirstCSharp.AssemblyInfo.cs
+C:\Users\omard\OneDrive\Bureau\C#\d_01\Debugging\FirstCSharp\obj\Debug\net6.0\FirstCSharp.csproj.CoreCompileInputs.cache
