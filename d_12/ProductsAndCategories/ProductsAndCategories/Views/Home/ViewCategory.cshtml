@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model Category
+<div class="text-center">
+    <h1>@Model.Name</h1>
+    <div class="text-center row">
+        <div class="col-6">
+            <h4>Products</h4>
+            @if (@Model.MyProducts.Count > 0)
+            {
+                @foreach (Association asc in @Model.MyProducts)
+                {
+                    <h6 class="text-primary">@asc.Product.Name</h6>
+                }
+            }
+        </div>
+        <div class="col-6">
+            <h4>Add Product</h4>
+            <form asp-action="AddAssociation" asp-controller="Home" method="post">
+                <div class="form-group">
+                    <select name="ProductId" class="form-control">
+                        @foreach (Product m in ViewBag.AllProducts)
+                        {
+                            if (!Model.MyProducts.Any(a => a.ProductId == m.ProductId))
+                            {
+                                <option value="@m.ProductId">@m.Name</option>
+                            }
+                        }
+                    </select>
+
+                    <input type="hidden" name="CategoryId" value="@Model.CategoryId">
+                </div>
+                <br>
+                <input type="submit" value="Add Association" class="btn btn-warning">
+            </form>
+        </div>
+    </div>
