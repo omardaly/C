@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">All Games</h1>
+    <div class="card shadow mb-3">
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Genre</th>
+                        <th>Rating</th>
+                        <th>Platform</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (Game game in ViewBag.AllGamesList)
+                        {
+                            <tr>
+                                <td>@game.Title</td>
+                                <td>@game.Price.ToString("c")</td>
+                                <td>@game.Genre</td>
+                                <td>@game.Rating</td>
+                                <td>@game.Platform</td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
